@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <section class="section1">
+        <div class="clockBox1">
+          <div class="box1"></div>
+          <div class="box2">
+            <p class="box2para">
+              The message and Image will change according to the time
+            </p>
+          </div>
+          <div class="box3">
+            <div class="subbox1">
+              <div class="timebox1">
+                <div class="wakeupimg"></div>
+                <label for="wakeuptime"
+                  ><p class="timepara">Set wake up time</p></label
+                >
+                <select name="wakeuptime" class="timeoption1" id="goodmorn" >
+                    <option value="8 AM - 9 AM"  class="option1">8 AM - 9 AM</option>
+                    <option value="9 AM - 10 AM"  class="option2">9 AM - 10 AM</option>
+                    <option value="10 AM - 11 AM"  class="option3">10 AM - 11 AM</option>
+                    <option value="11 AM - 12 PM"  class="option4">11 AM - 12 PM</option>
+                </select>
+              </div>
+
+              <div class="hr1"></div>
+
+              <div class="timebox1">
+                <div class="lunchimg"></div>
+                <label for="lunchtime"
+                  ><p class="timepara1">Set lunch time</p></label
+                >
+
+                <select name="lunchtime" class="timeoption2" id="goodaftern">
+                  <option value="12 PM - 1 PM" class="option1">12 PM - 1 PM</option>
+                    <option value="1 PM - 2 PM"  class="option2">1 PM - 2 PM</option>
+                    <option value="2 PM - 3 PM"  class="option3">2 PM - 3 PM</option>
+                    <option value="3 PM - 4 PM"  class="option4">3 PM - 4 PM</option>
+                </select>
+              </div>
+
+              <div class="hr1"></div>
+
+              <div class="timebox1">
+                <div class="napimg"></div>
+                <label for="nap"><p class="timepara2">Set nap time</p></label>
+
+                <select name="naptime" class="timeoption3" id="goodeven">
+                  <option value="4 PM - 5 PM" class="option1">4 PM - 5 PM</option>
+                    <option value="5 PM - 6 PM"  class="option2">5 PM - 6 PM</option>
+                    <option value="6 PM - 7 PM"  class="option3">6 PM - 7 PM</option>
+                    <option value="7 PM - 8 PM"  class="option4">7 PM - 8 PM</option>
+                </select>
+              </div>
+
+              <div class="hr1"></div>
+
+              <div class="timebox1">
+                <div class="nightimg"></div>
+                <label for="night">
+                  <p class="timepara3">Set night time</p>
+                </label>
+
+                <select name="nighhttime" class="timeoption4" id="goodnigh">
+                  <option value="8 PM - 9 PM" class="option1">8 PM - 9 PM</option>
+                  <option value="9 PM - 10 PM"  class="option2">9 PM - 10 PM</option>
+                  <option value="10 PM - 11 PM"  class="option3">10 PM - 11 PM</option>
+                  <option value="11 PM - 12 AM"  class="option4">11 PM - 12 AM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="box4"></div>
+          <span class="goodmorning">GOOD MORNING!! WAKE UP !!</span>
+          <button class="box5" id="box51" onmouseover="hover1()" onmouseout="hover2()"><span class="selalarm1">Set Alarm</span></button>
+          <div class="box6"></div>
+          <div class="box6details">
+            <p class="uptime">Wake Up Time : 8 AM - 12 PM </p>
+            <p class="uptime">Lunch Time : 12 PM - 4 PM</p>
+            <p class="uptime">Nap Time : 4 PM - 8 PM</p>
+            <p class="uptime">Night Time : 8 PM - 12 AM</p>
+          </div>
+        </div>
+        <div class="clockBox2">
+          <div class="box7">
+            <div class="time"><p class="paratime">TIME</p></div>
+            <div class="time1">
+              <p class="timedigit" id="hours">00</p>
+              <p class="timehr hr">hours</p>
+              <div class="colon1"></div>
+              <div class="colon2"></div>
+            </div>
+           
+            <div class="time2">
+              <p class="timedigit" id="munites">00</p>
+              <p class="timehr">mins</p>
+              <div class="colon1"></div>
+              <div class="colon2"></div>
+            </div>
+            
+            <div class="time3">
+              <p class="timedigit" id="seconds">00</p>
+              <p class="timehr">secs</p>
+            </div>
+            
+            <div class="ampm">
+              <p class="amorpm" id="amorpm">AM</p>
+            </div>
+          </div>
+          <div class="box8"></div>
+          <div class="box9"></div>
+          <div class="box10" id="box10">
+            <p class="grab" id="">GRAB SOME HEALTHY BREAKFAST!!!</p>
+          </div>
+          <div class="box11" id="box111"></div>
+          <div class="box12"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
